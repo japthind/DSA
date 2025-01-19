@@ -8,27 +8,27 @@
 
 from typing import List
 
-# class Solution:
-#     def majorityElement(self, nums: List[int]) -> int:
-#         sum = 0
-#         largest_element = 0
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        sum = 0
+        largest_element = 0
 
-#         for i in range(len(nums)):
-#             count = 0
-#             for j in range(len(nums)):
-#                 if nums[i] == nums[j]:
-#                     count += 1
-#             if count > sum:
-#                 sum = count
-#                 largest_element = nums[i]
+        for i in range(len(nums)):
+            count = 0
+            for j in range(len(nums)):
+                if nums[i] == nums[j]:
+                    count += 1
+            if count > sum:
+                sum = count
+                largest_element = nums[i]
         
-#         return largest_element
+        return largest_element
         
-# nums = [1,2,3,4,5,1,2,3,2,3,3]
-# solutions = Solution()
-# result = solutions.majorityElement(nums)
+nums = [1,2,3,4,5,1,2,3,2,3,3]
+solutions = Solution()
+result = solutions.majorityElement(nums)
 
-# print(result)
+print(result)
 
 # ***********************************************************************************************************************************************
 
@@ -39,16 +39,16 @@ from typing import List
     The idea is that if a number appears more than n//2 times it will surely be present at the middle index.
 """
 
-# class Solution:
-#     def majorityElement(self, nums: List[int]) -> int:
-#         nums.sort()
-#         return nums[len(nums) // 2]
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        nums.sort()
+        return nums[len(nums) // 2]
         
-# nums = [3,2,3]
-# solutions = Solution()
-# result = solutions.majorityElement(nums)
+nums = [3,2,3]
+solutions = Solution()
+result = solutions.majorityElement(nums)
 
-# print(result)
+print(result)
 
 # ***********************************************************************************************************************************************
 

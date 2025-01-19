@@ -1,3 +1,11 @@
+"""
+    O(n) - Time Complexity
+    O(n) - Space Complexity
+
+    This can be further optimized to only O(1) space complexity by directly storing the 
+    results in to the main array and not storing it in prefix or suffix array
+"""
+
 from typing import List
 
 class Solution:
