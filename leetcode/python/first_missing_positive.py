@@ -12,7 +12,6 @@ class Solution:
         if max(nums) < 0:
             result = 1
         for i in range(max(nums)):
-            print("i", i)
             if i not in nums:
                 if i != 0:
                     result = i
