@@ -1,0 +1,18 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x<0:
+            return False
+        num = [i for i in str(x)]
+        reverse_num = "".join(j for j in num[::-1])
+        if int(reverse_num) == x:
+            return True
+        else:
+            return False
+
+        
+        
+x = 121
+solutions = Solution()
+result = solutions.isPalindrome(x)
+
+print(result)
